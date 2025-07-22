@@ -1,0 +1,89 @@
+/*setting up the background color and font-family */
+body {
+  background-color: rgba(var(--backgroundRGB),0.5) !important;
+  font-family: "Space Grotesk", sans-serif;
+}
+  /* color theme */
+:root {
+    --backgroundClr: #FCD8CD;
+    --primaryClr: #FEEBF6;
+    --secondaryClr: #EBD6FB;
+    --DarkClr: #687FE5;
+
+
+    --backgroundRGB: 252, 216, 205;
+    --primaryRGB: 254, 235, 246;
+    --secondaryRGB: 235, 214, 251;
+    --DarkRGB: 104, 127, 229;
+}
+
+/* classes */
+/* Background Color Classes */
+.bg-background-clr {
+    background-color: var(--backgroudClr);
+}
+
+.bg-primary-clr {
+    background-color: var(--primaryClr);
+}
+
+.bg-secondary-clr {
+    background-color: var(--secondaryClr);
+}
+
+.bg-dark-clr {
+    background-color: var(--DarkClr);
+}
+
+/* Text Color Classes */
+.text-background-clr {
+    color: var(--backgroudClr);
+}
+
+.text-primary-clr {
+    color: var(--primaryClr);
+}
+
+.text-secondary-clr {
+    color: var(--secondaryClr);
+}
+
+.text-dark-clr {
+    color: var(--DarkClr);
+}
+
+/* Border Color Classes */
+.border-background-clr {
+    border: 1px solid var(--backgroudClr);
+}
+
+.border-primary-clr {
+    border: 1px solid var(--primaryClr);
+}
+
+.border-secondary-clr{
+    border: 1px solid var(--secondaryClr);
+}
+
+.border-dark-clr {
+    border: 1px solid var(--DarkClr);
+}
+
+/* Optional: Background with Opacity (using RGB) */
+.bg-background-clr-50 {
+    background-color: rgba(var(--backgroundRGB), 0.5);
+}
+.bg-primary-clr-50 {
+    background-color: rgba(var(--primaryRGB), 0.5);
+}
+.bg-secondary-clr-50 {
+    background-color: rgba(var(--secondaryRGB), 0.5);
+}
+.bg-dark-clr-50 {
+    background-color: rgba(var(--DarkRGB), 0.5);
+}
+
+/* font class */
+.main-font{
+     font-family: "Space Grotesk", sans-serif;
+}

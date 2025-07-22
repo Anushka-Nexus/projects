@@ -1,0 +1,95 @@
+/* icon class */
+.main-icon{
+    top: 30%;
+    left: 50%;
+    transform:translateX(-50%) ;
+    color: var(--DarkClr) 
+    
+}
+/* customizing font position */
+.main-font-style{
+    margin-left:240px;
+    margin-top: 0.2rem;
+    font-weight: 500;
+}
+/* customizing cta btn */
+.cta-btn-style{
+    height: 40px;
+    width: 100px;
+    position:relative;
+    right: 0;
+    z-index: 1;
+    background-color: var(--DarkClr);
+    overflow: hidden;
+    transform: scale(0.9);
+    border-color: var(--primaryClr);
+}
+.cta-btn-style::before{
+    content: "";
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:linear-gradient(var(--primaryClr) 90%, var(--DarkClr)10%); 
+    transform: scale(1) rotate(0deg);
+    opacity: 0.5;
+    z-index: -1;
+    animation: rotation-cta 4s ease infinite;
+    
+}
+ .cta-btn-style::after{
+    content: "";
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    transform: scale(0.9);
+    background-color: var(--DarkClr);
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: inherit;
+    
+} 
+/* cta animation */
+@keyframes rotation-cta {
+    100%{
+         transform: scale(1.1) rotate(360deg);
+    }
+}
+/* intro-section */
+.intro-section{
+    flex-basis: 410px;
+    height: 600px;
+     /* background-color: rgb(130, 38, 38);  */
+    margin-left: 110px !important;
+}
+.custom-grid{
+    flex-basis: 800px;
+    height: 600px;
+    background-color: black;
+}
+.custom-btn{
+    height: 40px;
+    width: 200px;
+    color: var(--DarkClr) !important;
+    background-color: rgba(var(--secondaryRGB),0.6) !important;
+    border: 2px solid !important;
+    border-color: var(--DarkClr) !important;
+}
+.intro-text{
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 5rem;
+}
+.contact-btn{
+    height: 40px;
+    width: 130px;
+    background-color: rgba(var(--DarkRGB),1) !important;
+    color: var(--primaryClr) !important;
+     border: 2px solid !important;
+    border-color: var(--secondaryClr) !important;
+    margin-top:80px;
+}
+/* linear-gradient(var(--primaryClr) 10%, var(--DarkClr)90%); */
